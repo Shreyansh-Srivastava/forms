@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="form.js">
+    </script>
+    <link rel="stylesheet" href="form.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <img src="https://admission4sure.com/wp-content/uploads/2021/04/1569909597phpG2tzJm-1.png" alt="" width="125" height="125" id="image"/>
+    <div class="container">
+    Bansilal Ramnath Agarwal Charitable Trust's<br>
+    <h2><u>VISHWAKARMA INSTITUTE OF TECHNOLOGY, PUNE</u></h2>
+    666, Upper Indiranagar, Bibwewadi, Pune, Maharashtra, INDIA - 411 037.<br>
+    (An Autonomous Institute affiliated to Savitribai Phule Pune University)
+    <a href="https://www.vit.edu/">Click here to visit the Official website of Institute</a>
+    <h2><u>Registration Form</u></h2>
+    <form name="registration" class="registartion-form" action="submit.html" onsubmit="return formValidation()">
+     <br>
+     <fieldset>  
+        <legend>User personal information</legend>
+        <fieldset>
+            <legend>Enter Your Name</legend>
+        <table>
+            <tr>
+                <td><label for="fname">First Name: </label></td>  
+                <td><input type="text" name="fname" id="fname" placeholder="your first name"></td>
+            </tr>
+            <tr>
+                <td><label for="mname">Middle Name: </label></td>  
+                <td><input type="text" name="mname" id="mname" placeholder="your middle name"></td>
+            </tr>
+            <tr>
+                <td><label for="lname">Last Name</label></td>
+                <td><input type="text" name="lname" id="lname" placeholder="your last name"></td>
+            </tr>
+         </table>
+        </fieldset>
+        <table>
+            <tr>
+                <td><label for="dob">You Date of birth: </label></td>
+                <td><input type="date" name="dob" id="dob"></td>
+            </tr>
+            <tr>
+                <td><label for="gender">Select your gender: </label></td>  
+                <td><input type="radio" name="gender" id="gender" value="male"/>Male    
+                <input type="radio" name="gender" id="gender" value="female"/>Female     
+                <input type="radio" name="gender" id="gender" value="others"/>other</td>
+            </tr>
+            <tr>
+                <td><label for="ffname">Enter your Father's Name: </label></td>  
+                <td><input type="text" name="ffname" id="ffname" placeholder="your father's name"></td>
+            </tr>
+            <tr>
+                <td><label for="mmname">Enter your Mother's Name:</label></td>  
+                <td><input type="text" name="mmname" id="mmname" placeholder="your mother's name"></td>
+            </tr>
+        </table>
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Login Credentials</legend>
+        <table>
+            <tr>
+                <td><label for="email">Enter your email: </label></td>
+                <td><input type="email" name="email" id="email" placeholder="email with proper domain"></td>
+            </tr>
+            <tr>
+                <td><label for="password">Enter your password: </label></td> 
+                <td><input type="password" name="password" id="password"></td>
+            </tr>
+            <tr>
+                <td><label for="password">confirm your password: </label></td>  
+                <td><input type="password" name="password1" id="password1"></td>
+            </tr>
+        </table>
+     </fieldset>
+     <br>
+     <fieldset>  
+        <legend>User Contact details</legend>
+        <table>
+            <tr>
+                <td><label for="phone number">Enter Contact Number: </label></td>
+                <td><input type="text" name="country code"  value="+91" size="2"/>   
+                    <input type="text" name="phone" size="10" id="phone"/></td>
+            </tr>
+            <tr>
+                <td><label for="phone number1">Enter Alternate Contact Number: </label></td>
+                <td><input type="text" name="country_code1" size="2" id="code"/>   
+                <input type="text" name="phone1" size="10" id="phone1"/></td>
+            </tr>
+            <tr>
+                <td><label for="address">Enter your Address:</label></td> 
+                <td><textarea name="address" id="address" placeholder="Your current address"></textarea></td>
+            </tr>
+        </table> 
+     </fieldset>
+     <br>
+     <fieldset>  
+        <legend>Education details</legend>
+        <table>
+            <tr>
+                <td><label for="jee">Enter JEE Rank: </label></td>
+                <td><input type="text" name="jee" id="jee" placeholder="Your JEE Rank"></td>
+            </tr>
+            <tr>
+                <td><label for="cet">Enter MHT-CET Rank: </label></td>
+                <td><input type="text" name="cet" id="cet" placeholder="Your CET Rank"></td>
+            </tr>
+            <tr>
+                <td><label for="rank">Enter Institute Rank: </label></td>
+                <td><input type="text" name="Rank" id="Rank" placeholder="Rank between 1 to 9999"></td>
+            </tr>
+            <tr>
+                <td><label for="prn">Enter PRN Number: </label></td>
+                <td><input type="text" name="prn" size="8" id="prn" placeholder="8 digit PRN"></td>
+            </tr>
+            <tr>
+                <td><label for="course">Select Course: </label></td> 
+                <td><select name="course" id="course">  
+                    <option value="">Course</option>  
+                    <option value="B.Tech">B.Tech</option>  
+                    <option value="MCA">MCA</option>  
+                    <option value="M.Tech">M.Tech</option>  
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="stream">Select Stream: </label></td> 
+                <td><select name="stream" id="stream">  
+                    <option value="">Stream</option>  
+                    <option value="Comp">Computer Engineering</option>  
+                    <option value="Entc">Electronics and Telecommunications</option>  
+                    <option value="IT">Information Technology</option>
+                    <option value="Aids">Artificial Intelligence and Data Science</option>
+                    <option value="Mech">Mechanical Engineering</option>
+                    <option value="chem">Chemical Engineering</option>  
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="upfile">Upload your Admission Confirmation form: </label></td>
+                <td><input type="file" name="upfile" id="upfile"/></td>
+            </tr>
+        </table>
+     </fieldset>
+     <br>
+    <input type="submit" class="submit" value="Register" />
+    <input type="reset" class="reset" value="Reset" />
+    <closeform></closeform>
+  </form>
+</div>
+</body>
+</html>

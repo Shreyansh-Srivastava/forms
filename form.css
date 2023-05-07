@@ -1,0 +1,58 @@
+* {
+    margin: 1px;
+  }
+
+#image  {
+    float: left;
+    margin-left: 350px;
+    margin-right: -350px;
+    }
+
+.registartion-form input,
+.registartion-form select,
+.registartion-form textarea {
+  border: none;
+  padding: 5px;
+  margin-top: 10px;
+  font-family: sans-serif;
+}
+
+  .registartion-form input:focus,
+  .registartion-form textarea:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgb(124, 0, 0), 0 0 10px rgb(159, 1, 1);
+}
+
+.submit {
+    background-color: #2304aa;
+    color: white;
+    font-size: medium;
+    padding: 10px 10px;
+    margin: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  .reset {
+    background-color: #066ac7;
+    color: white;
+    font-size: medium;
+    padding: 10px 10px;
+    margin: none;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+    
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: lightblue;  
+  }
+
+  
